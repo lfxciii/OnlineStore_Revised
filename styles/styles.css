@@ -1,0 +1,106 @@
+/* Move down content because we have a fixed navbar that is 3.5rem tall */
+body {
+  padding-top: 3.5rem;
+}
+
+.listLinks {
+    list-style-type: none;
+    text-align: center;
+    font-family: cursive;
+    padding: 0;
+}
+
+
+.listLinks a:hover {
+    color: white;
+}
+
+.listLinks li {
+    display: inline;
+    padding: 10px;
+}
+
+/* Custom styles applied to articles. */
+article {
+    float: left;
+    width: 32.4%;
+    height: 320px;    
+    display: inline-block;
+}
+
+article p {
+    /*text-align: justify;*/
+    padding: 10px;
+}
+
+/* Notice that this class is not applied because we've chosen to use the Bootstrap button style rather. */
+.moreButton {
+    padding: 10px;
+    float: right;
+    border: 3px solid black;
+    border-radius: 8px;
+    background: black;
+}
+
+
+footer {
+    text-align: center;
+    clear: both;
+}
+
+/* If you want to modify some of the Bootstrap styles, you can refer to the class names as shown by the CSS rules below: */
+
+.img-fluid {
+    width: 130px;
+    height: 100px;
+}
+
+.img-fluid:hover {
+    opacity: 0.5;
+
+}
+
+/* Change the look of the Bootstrap button style. */
+.btn {
+    padding: 5px;         
+    border-radius: 8px;    
+}
+
+.mediumImage {
+    width: 500px;
+    height: 200px;
+}
+
+.wrapper {
+    display: flex;
+    width: 100%;
+}
+
+#sidebar {
+    width: 250px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    z-index: 999;
+    background: #7386D5;
+    color: #fff;
+    transition: all 0.3s;
+} 
+
+.artlink {    
+    color: black;    
+}
+
+.artlink:hover {
+    text-decoration: none;
+    color: orangered;
+}
+
+.back-gray {
+    background-color: lightgray;
+}
+
+.list {
+    background-color: darkgray;
+}
